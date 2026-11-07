@@ -19,3 +19,11 @@ cell2.textContent = "32";
 myTable.tBodies[0].deleteRow(1);
 
 myTable.tHead.style.fontStyle = "italic";
+
+const newRow2 = myTable.insertRow();
+const cell3 = newRow2.insertCell();
+cell3.textContent = "Paul";
+
+const cell4 = newRow2.insertCell();
+cell4.textContent = "15";
+
