@@ -1,5 +1,7 @@
 const myDiv = document.querySelector("#myDiv").style.color = "red";
 
+
+//Herumspielen mit table//
 const myList = document.getElementById("myList");
 const newItem = document.createElement("li");
 newItem.textContent = "Item 4";
@@ -27,3 +29,18 @@ cell3.textContent = "Paul";
 const cell4 = newRow2.insertCell();
 cell4.textContent = "15";
 
+//Herumspielen mit form//
+
+const formular = document.querySelector("#myForm");
+const nameLabel = formular.querySelector('label[for="name"]');
+const nameInput = formular.querySelector("#name");
+nameLabel.textContent = "Password:";
+nameInput.type= "password";
+nameInput.id="password";
+nameInput.name="password";
+
+const colorSelector = document.querySelector("#color");
+const newColor = document.createElement("option");
+newColor.value = "pink";
+newColor.textContent = "Pink";
+colorSelector.append(newColor);
