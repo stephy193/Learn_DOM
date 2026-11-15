@@ -44,3 +44,13 @@ const newColor = document.createElement("option");
 newColor.value = "pink";
 newColor.textContent = "Pink";
 colorSelector.append(newColor);
+
+//Herumspielen mit button//
+
+const submitButton = document.querySelector("#submitBtn");
+submitButton.addEventListener ("click", function () {
+    alert("Thank you!");
+    formular.reset ();
+});
+
+

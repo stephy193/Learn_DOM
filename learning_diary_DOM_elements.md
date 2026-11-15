@@ -39,3 +39,12 @@ form:
 für <input> verschiedene types möglich, z.B. e-mail, password,...
 input id ist notwendig, damit es in JS mit # gefunden werden kann
 nur inputs mit name werden mitgeschickt, wenn nur id vorhanden - wird nicht mitgeschickt!
+
+buttons:
+Knopf, den man anklicken kann
+ohne JS macht ein button gar nichts, er lässt sich nur anklicken
+Code gibt buttons eine Aufgabe
+Types: submit oder reset
+wenn man kein type definiert, ist es automatisch submit wenn der Knopf in einem Formular steht
+buttonName.addEventListener("click", function () {
+}); ----- um dem Klick eine Aufgabe zu geben
