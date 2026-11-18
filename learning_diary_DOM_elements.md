@@ -54,4 +54,11 @@ buttonName.addEventListener("click", function () {
 div: 
 neutraler Behälter, fasst mehrere Elemente zusammen. Diese kann man dann gemeinsam ansprechen mit JS oder gestalten in CSS.
 
+ul:
+ul ist eine Liste ohne feste Reihenfolge - unordered list
+man nutzt es zB für Menüs und Navigationsleisten
+in einem ul dürfen nur <li> stehen, keine anderen Elemente
+ol wäre eine Liste mit Reihenfolge
+dl wäre Begriff + Beschreibung
+man kann auch Unterlisten haben, also eine <ul> in einer <li>
 

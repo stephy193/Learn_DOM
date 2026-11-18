@@ -71,3 +71,12 @@ submitButton.addEventListener ("click", function () {
 myDiv.style.backgroundColor = "lightblue";
 // myDiv ist in Zeile 1 schon deklariert//
 
+
+//Herumspielen mit ul//
+myList.addEventListener ("click", function(event) {
+    const eintrag = event.target.closest("li");
+    if (eintrag) {
+        console.log(eintrag.textContent);
+    }
+})
+
