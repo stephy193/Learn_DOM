@@ -34,11 +34,13 @@ für tHead gehts einfacher:
 myTable.tHead.style.fontStyle = "italic";
 
 15.11.2026 
-form:
+form & input:
 = Formular, Teil der Website indem was eingegeben wird
 für <input> verschiedene types möglich, z.B. e-mail, password,...
 input id ist notwendig, damit es in JS mit # gefunden werden kann
 nur inputs mit name werden mitgeschickt, wenn nur id vorhanden - wird nicht mitgeschickt!
+Checkboxen sind unabhängig voneinander und Radio ist eine Gruppe, wo nur einer wählbar ist (in unserem Beispiel Small und Large)
+wenn man ein Radio bearbeitet - querySelector() nimmt das erste was passt, aber nicht alle Elemente. Wenn man mehrere checken möchte, dann querySelectorAll() und dann .forEach(). 
 
 buttons:
 Knopf, den man anklicken kann

@@ -29,7 +29,7 @@ cell3.textContent = "Paul";
 const cell4 = newRow2.insertCell();
 cell4.textContent = "15";
 
-//Herumspielen mit form//
+//Herumspielen mit form & input//
 
 const formular = document.querySelector("#myForm");
 const nameLabel = formular.querySelector('label[for="name"]');
@@ -44,6 +44,18 @@ const newColor = document.createElement("option");
 newColor.value = "pink";
 newColor.textContent = "Pink";
 colorSelector.append(newColor);
+
+const sizeInput = document.querySelectorAll('input[name="size"]');
+sizeInput.forEach(function (sizeInput) {
+sizeInput.addEventListener("change", function() {
+    const chosenSize = document.querySelector('input[name="size"]:checked');
+if(chosenSize) {
+    console.log(chosenSize.value);
+} else {
+    console.log("No size chosen");
+}
+});
+});
 
 //Herumspielen mit button//
 
