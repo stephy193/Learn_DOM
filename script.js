@@ -1,4 +1,5 @@
-const myDiv = document.querySelector("#myDiv").style.color = "red";
+const myDiv = document.querySelector("#myDiv");
+myDiv.style.color = "red";
 
 
 //Herumspielen mit table//
@@ -65,4 +66,8 @@ submitButton.addEventListener ("click", function () {
     formular.reset ();
 });
 
+
+// Herumspielen mit div//
+myDiv.style.backgroundColor = "lightblue";
+// myDiv ist in Zeile 1 schon deklariert//
 

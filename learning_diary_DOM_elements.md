@@ -50,3 +50,8 @@ Types: submit oder reset
 wenn man kein type definiert, ist es automatisch submit wenn der Knopf in einem Formular steht
 buttonName.addEventListener("click", function () {
 }); ----- um dem Klick eine Aufgabe zu geben
+
+div: 
+neutraler Behälter, fasst mehrere Elemente zusammen. Diese kann man dann gemeinsam ansprechen mit JS oder gestalten in CSS.
+
+
