@@ -2,7 +2,7 @@ const myDiv = document.querySelector("#myDiv");
 myDiv.style.color = "red";
 
 
-//Herumspielen mit table//
+//Herumspielen mit table
 const myList = document.getElementById("myList");
 const newItem = document.createElement("li");
 newItem.textContent = "Item 4";
@@ -30,7 +30,7 @@ cell3.textContent = "Paul";
 const cell4 = newRow2.insertCell();
 cell4.textContent = "15";
 
-//Herumspielen mit form & input//
+//Herumspielen mit form & input
 
 const formular = document.querySelector("#myForm");
 const nameLabel = formular.querySelector('label[for="name"]');
@@ -58,7 +58,7 @@ if(chosenSize) {
 });
 });
 
-//Herumspielen mit button//
+//Herumspielen mit button
 
 const submitButton = document.querySelector("#submitBtn");
 submitButton.addEventListener ("click", function () {
@@ -67,12 +67,12 @@ submitButton.addEventListener ("click", function () {
 });
 
 
-// Herumspielen mit div//
+// Herumspielen mit div
 myDiv.style.backgroundColor = "lightblue";
 // myDiv ist in Zeile 1 schon deklariert//
 
 
-//Herumspielen mit ul//
+//Herumspielen mit ul
 myList.addEventListener ("click", function(event) {
     const eintrag = event.target.closest("li");
     if (eintrag) {
@@ -80,3 +80,9 @@ myList.addEventListener ("click", function(event) {
     }
 })
 
+//Herumspielen mit select/option
+const placeholder = document.createElement("option");
+placeholder.value = "";
+placeholder.textContent = "Please select...";
+placeholder.defaultSelected = true;
+colorSelector.prepend(placeholder);

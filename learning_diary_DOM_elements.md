@@ -55,10 +55,15 @@ div:
 neutraler Behälter, fasst mehrere Elemente zusammen. Diese kann man dann gemeinsam ansprechen mit JS oder gestalten in CSS.
 
 ul:
-ul ist eine Liste ohne feste Reihenfolge - unordered list
+<ul> ist eine Liste ohne feste Reihenfolge - unordered list
 man nutzt es zB für Menüs und Navigationsleisten
 in einem ul dürfen nur <li> stehen, keine anderen Elemente
 ol wäre eine Liste mit Reihenfolge
 dl wäre Begriff + Beschreibung
 man kann auch Unterlisten haben, also eine <ul> in einer <li>
 
+select/option:
+<select> ist eine Auswahlliste, man wählt einen Eintrag. Jeder Eintrag ist eine <option>>. Die beiden gehören immer zusammen.
+option value ist der Wert der mitgeschickt und von JS gelesen wird. Der Text ist der Text, den ich als Mensch vor dem Bildschirm sehe.
+Wenn kein value definiert wird, ist der Text automatisch das value.
+<select> hat keinen placeholder, daher immer der erste Eintrag automatisch angezeigt - Lösung wäre leerer Starteintrag
