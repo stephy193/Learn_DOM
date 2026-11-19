@@ -67,3 +67,11 @@ select/option:
 option value ist der Wert der mitgeschickt und von JS gelesen wird. Der Text ist der Text, den ich als Mensch vor dem Bildschirm sehe.
 Wenn kein value definiert wird, ist der Text automatisch das value.
 <select> hat keinen placeholder, daher immer der erste Eintrag automatisch angezeigt - Lösung wäre leerer Starteintrag
+.defaultSelected - ist immer angeklickt, auch nach einem Formular-Reset
+
+canvas:
+wie ein Gemälde, sobald man draufmalt ist jede Form einzeln nicht mehr ansprechbar, sondern man muss drüber malen oder alles löschen und neu malen.
+width und height sind tatsächliche Pixel - Zeichenfläche, nicht wie in CSS, da ist es die Anzeigegröße, das Bild wird gestreckt.
+erst mit .append ist der Canvas "aufgehängt", davor wird er nur erstellt, aber ist noch nicht sichtbar auf der Seite
+Das Gleiche mit .fillText - Text wird dann erst eingebunden
+Problem: der Canvas kann nicht selbst zeichnen. Man braucht dafür einen "Stift", das ist .getContext. "2d" ist für flache, zweidimensionale Bilder. Es gibt auch "webgl" für 3D Graphik.

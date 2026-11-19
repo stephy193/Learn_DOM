@@ -86,3 +86,22 @@ placeholder.value = "";
 placeholder.textContent = "Please select...";
 placeholder.defaultSelected = true;
 colorSelector.prepend(placeholder);
+
+//Herumspielen mit canvas
+const canvas = document.createElement("canvas");
+canvas.width=400;
+canvas.height=200;
+canvas.id="myCanvas";
+canvas.style.border="1px solid black";
+document.body.append(canvas);
+
+const context = canvas.getContext("2d");
+
+context.fillStyle = "pink";
+context.fillRect(0, 0, canvas.width, canvas.height);
+
+context.font = "bold 50px Arial";
+context.fillStyle = "black";
+context.textAlign = "center";
+context.textBaseline = "middle";
+context.fillText("THANK YOU!", canvas.width / 2, canvas.height / 2);
